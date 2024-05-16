@@ -11,7 +11,7 @@ def main(page: Page) ->None:
     #page.theme_mode = ft.ThemeMode.DARK
     #page.vertical_alignment = ft.MainAxisAlignment.CENTER
     page.window_width = 600 #Ancho 600
-    page.window_height = 620  #Alto
+    page.window_height = 670  #Alto
     page.window_resizable = False #Para que no se pueda redimensionar
     page.window_center()
     page.padding = 0  #que no haya espaciado entre los elementos
@@ -86,7 +86,7 @@ def main(page: Page) ->None:
     txtTamano = ft.TextField(label="dimensión")
     txtIngresar = ft.TextField(label="Matriz A: a11",disabled=True)
     txtVector = ft.TextField(label="Vector b: b1",disabled=True)
-    txtEcuacion = ft.TextField(label="Ecuaciones",multiline=True,value="\n\n",disabled=True)
+    txtEcuacion = ft.TextField(label="Ecuaciones",multiline=True,value="\n\n",disabled=True,width=350)
     botonTamano = ElevatedButton(text = 'Aceptar')
     botonAgregar = ElevatedButton(text = 'Agregar',disabled=True)
     botonAgregar2 = ElevatedButton(text = 'Agregar',disabled=True)

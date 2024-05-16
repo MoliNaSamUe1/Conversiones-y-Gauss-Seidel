@@ -179,7 +179,7 @@ def basen(cadena,num):
             con="Decimal a binario: "+decimal_binario(int(num))+"\nDecimal a ternario: "+decimal_ternario(int(num))+"\nDecimal a cuaternario: "+decimal_cuaternario(int(num))+"\nDecimal a octal: "+decimal_octal(int(num))+"\nDecimal a hexadecimal: "+decimal_hexadecimal(int(num))
            
         elif(cadena.lower() == "binario"):
-            con="Binario a decimal: "+str(binario_decimal(num))+"\nBinario a octal: "+decimal_octal(binario_decimal(num))+"\nBinario a hexadecimal: "+decimal_hexadecimal(binario_decimal(num))
+            con="Binario a decimal: "+str(binario_decimal(num))+"\nBinario a ternario: "+decimal_ternario(binario_decimal(num))+"\nBinario a Cuaternario: "+decimal_cuaternario(binario_decimal(num))+"\nBinario a octal: "+decimal_octal(binario_decimal(num))+"\nBinario a hexadecimal: "+decimal_hexadecimal(binario_decimal(num))
 
         elif(cadena.lower() == "ternario"):
             con="Ternario a binario: "+decimal_binario(ternario_decimal(num))+"\nTernario a decimal: "+str(ternario_decimal(num))+"\nTernario a cuaternario: "+decimal_cuaternario(ternario_decimal(num))+"\nTernario a octal: "+decimal_octal(ternario_decimal(num))+"\nTernario a hexadecimal: "+decimal_hexadecimal(ternario_decimal(num))
