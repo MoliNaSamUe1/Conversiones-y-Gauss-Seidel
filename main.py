@@ -5,7 +5,6 @@ from flet import RouteChangeEvent, ViewPopEvent, CrossAxisAlignment, MainAxisAli
 import conversiones
 import gauss_seidel
 
-
 def main(page: Page) ->None:
     page.title = 'Calculo Numerico'
     #page.theme_mode = ft.ThemeMode.DARK
@@ -36,8 +35,6 @@ def main(page: Page) ->None:
         ],
     )
 
-    
-    #print(dd.value)
     texto = ft.TextField(label="número")
     texto2 = ft.TextField(label="resultado",multiline=True,value="\n\n")
     botonConvertir =ElevatedButton(text='   Convertir   ',disabled=True)
@@ -58,8 +55,7 @@ def main(page: Page) ->None:
         else:
             botonConvertir.disabled=True
 
-        page.update()
-    
+        page.update() 
     
     #Funcion del boton convertir
     def button_clicked(e: ft.ControlEvent) ->None:
@@ -254,7 +250,8 @@ def main(page: Page) ->None:
                         Text(value = 'Conversiones Numéricas',size = 30),
                         row,
                         row2,
-                        bb
+                        bb,
+                        
                     ],
                     vertical_alignment=MainAxisAlignment.CENTER,
                     horizontal_alignment=CrossAxisAlignment.CENTER,

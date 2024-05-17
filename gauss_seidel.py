@@ -1,5 +1,12 @@
 import numpy as np
 
+fila = 0
+col = 0
+pos = 0
+matriz = None
+vector = None
+result = None
+
 def entero(cadena):
     try:
         int(cadena)
@@ -40,8 +47,6 @@ def errores(anterior,actual,tolerancia):
             return False
     return True
 
-
-
 #Funcion que realiza el metodo gauss seidel
 def gauss(matriz, vector , result, tolerancia, iterar):
      
@@ -79,39 +84,4 @@ def ecuacion(matriz, vector):
                 else:
                     cadena += "= "+str(vector[i])+"\n"
     return cadena
-                
-
-
-
-
-            
-
-              
-
-
-
-
-#matriz = np.array([[7,1,9],[-10,5,4],[1,8,3]])
-#matriz = np.array([[3,-4,5,-7],[2,-4,5,-1],[3,-1,7,5],[1,2,-4,5]])
-#vector = np.array([19,21,10,31])
-#result = np.zeros_like(vector)
-#ceros = np.zeros((3,3))
-fila = 0
-col = 0
-pos = 0
-matriz = None
-vector = None
-result = None
-
-
-#diagonal_dominante(matriz,vector)
-#print(matriz)
-#print(ecuacion(matriz,vector))
-#print(matriz)
-#print(vector)
-#print(gauss(matriz,vector,result,0.01,30))
-
-#print(matriz)
-#print(vector)
-
 

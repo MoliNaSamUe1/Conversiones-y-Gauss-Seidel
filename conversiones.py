@@ -75,8 +75,6 @@ def decimal_hexadecimal(decimal):
         hexa = str(decimal) + hexa
     return hexa
 
-
-
 #binario - decimal
 def binario_decimal(binario):
     decimal = 0
@@ -197,7 +195,3 @@ def basen(cadena,num):
     else:
         con="Numero de la base especificada escrito incorrectamente"
         return con
-
-
-
-#basen(cadena,num)
